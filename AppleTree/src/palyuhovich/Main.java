@@ -14,11 +14,13 @@ public class Main {
 			try {
 				String line = reader.readLine();
 				if ("grow".equals(line)) {
-					System.out.println(tree.graw(100));
+					System.out.println(tree.grow(100));
 				} else if ("shake".equals(line)) {
 					System.out.println(tree.shake());
 				} else if ("exit".equals(line)) {
 					System.exit(0);
+				} else if ("bloom".equals(line)) {
+					System.out.println(tree.bloom(100));
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
